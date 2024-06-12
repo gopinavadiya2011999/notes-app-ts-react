@@ -1,0 +1,136 @@
+@import "../styles/colors.scss";
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation-duration: 0.7s;
+  animation-name: fadeInDown;
+  animation-timing-function: ease-out;
+}
+
+.normalView {
+  position: relative;
+
+  margin: 0;
+  height: 80px;
+  padding: 0;
+}
+
+.icon-size {
+  font-size: 20px;
+}
+
+.main-icon-container {
+  width: 40px;
+  height: 40px;
+  line-height: 0%;
+  margin: 0px 4px;
+  font-size: 20px;
+  color: var(--grey-color);
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+}
+.main-icon-container:hover {
+  border-radius: 50%;
+  color: var(--secondary-color);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgba(124, 124, 124, 0.2);
+}
+
+.list-style {
+  align-items: center;
+  padding: 10px 10px;
+  display: flex;
+  margin: 0%;
+  color: var(--text-color);
+}
+
+.list-style li {
+  display: flex;
+}
+
+.note-icon {
+  width: 35px;
+  height: 37px;
+  margin-left: 10px;
+}
+
+.keep-text {
+  width: 35px;
+  height: 37px;
+  align-content: center;
+  margin: 0px 12px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.google-button {
+  background-color: #00897b;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-content: center;
+  color: white;
+  border-radius: 50%;
+}
+
+.search-input {
+  flex-grow: 1;
+
+  outline: none;
+  border: none;
+
+  color: var(--secondary-color);
+  align-content: center;
+  margin: 0%;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.search-input::placeholder {
+  color: var(--grey-color);
+}
+.search-input.focused::placeholder {
+  color: grey;
+}
+.search-view {
+  border: none;
+  border-radius: 8px;
+  margin: 8px 10px 8px 5vw;
+
+  align-items: center;
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  line-height: 0%;
+  margin: 0px 4px;
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+  display: inline-block;
+}
+.close:hover {
+  border-radius: 50%;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  background-color: rgba(124, 124, 124, 0.2);
+}

@@ -1,0 +1,39 @@
+$primary-color: #000000;
+$secondary-color: #5f6368;
+$light-background: #ffffff;
+$dark-background: #2e2e2e;
+$light-text: #000000;
+$light-grey-text: #f1f3f4;
+$dark-text: #ffffff;
+$darkgrey-search-text: #595b5d;
+$white-light-text: #ffffffde;
+$filterWhite: brightness(0) invert(1) brightness(2);
+$filterGrey: grayscale(100%) brightness(60%) contrast(10%);
+$filterBlack: brightness(0);
+$filterLightWhite: brightness(0) invert(1) opacity(80%) contrast(30%);
+
+
+.dark-theme {
+    --icon-color: #{$filterLightWhite};
+    --background-color: #{$dark-background};
+    --text-color: #{$dark-text};
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$light-background};
+    --grey-color: #{$white-light-text};
+    --filter-dark: #{$filterWhite};
+    --light-grey-text: #{$light-grey-text};
+    --darkgrey-search-text: #{$darkgrey-search-text};
+}
+
+
+.light-theme {
+    --darkgrey-search-text: #{$light-grey-text};
+    --icon-color: #{$filterGrey};
+    --primary-color: #{$light-background};
+    --secondary-color: #{$primary-color};
+    --background-color: #{$light-background};
+    --text-color: #{$light-text};
+    --grey-color: #{$secondary-color};
+    --filter-dark: #{$filterBlack};
+    --light-grey-text: #{$light-grey-text};
+}

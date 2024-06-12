@@ -1,0 +1,160 @@
+@import "../styles/colors.scss";
+
+.note-input-container {
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  border: 1px solid rgb(231, 231, 231);
+  outline: none;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.note-input::placeholder {
+  color: var(--grey-color);
+}
+.note-icon {
+  width: 40px;
+  height: 40px;
+  line-height: 0%;
+  margin: 4px 4px;
+  text-align: center;
+  align-content: center;
+  color: var(--secondary-color);
+  border-radius: 50%;
+  display: inline-block;
+}
+.note-icon:hover {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgba(124, 124, 124, 0.2);
+}
+.icon-size {
+  width: 20px;
+  height: 20px;
+  filter: none;
+}
+
+.search-container {
+  max-height: 37rem;
+  overflow-y: auto;
+}
+
+.modal-container {
+  max-height: 43rem;
+  overflow-y: auto;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  resize: none;
+  overflow-y: hidden;
+  font-size: 16px;
+  cursor: text;
+  border: 1px solid #ccc;
+
+  min-height: 50px;
+}
+
+.note-input:focus,
+.search-input:focus {
+  outline: none;
+}
+
+.note-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  resize: none;
+  overflow-y: hidden;
+  font-size: 16px;
+
+  min-height: 50px;
+
+  cursor: text;
+  background: none;
+  outline: none;
+  border: none;
+  color: var(--secondary-color);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b0aeae;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.short-icon-container {
+  height: 35px;
+
+  width: 35px;
+  text-align: center;
+  align-content: center;
+  border-radius: 50%;
+  color: var(--grey-color);
+}
+.short-icon-container:hover {
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  background-color: rgb(213, 213, 213);
+}
+
+.short-icon {
+  font-size: 30px;
+}
+.search-main {
+  width: 40rem;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  border: 1px solid rgb(231, 231, 231);
+  outline: none;
+  border-radius: 8px;
+}
+
+.close-text {
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 0px 12px;
+  align-content: center;
+}
+
+.close-text:hover {
+  color: black;
+  background-color: #ebebeb;
+}
+.short-icon-container.dropdown-toggle::after {
+  display: none;
+}
